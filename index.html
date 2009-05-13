@@ -1,1 +1,43 @@
-My Gamelinux GitHub Page
+---
+layout: default
+title: Prads
+---
+ 
+<h1>Introduction</h1>
+<p>
+prads.pl - inspired by <a href="passive.sourceforge.net">passive.sourceforge.net</a>, <a href="http://lcamtuf.coredump.cx/p0f.shtml">lcamtuf.coredump.cx/p0f</a> and others...<br><br>
+ 
+Is a `Passive Real-time Asset Detection System`. It <b>passively</b> listen to network traffic and gathers information on hosts and services it sees on the network. This information can be used to map your network, letting you know what services and hosts are alive/used, or can be used together with your favorite IDS/IPS setup for "event to host/service" correlation.
+</p>
+ 
+<h2>Features</h2>
+PRADS is under development, but it includes currently TCP service fingerprinting, MAC (ARP) discovery and OS fingerprinting, both SYN and SYN+ACK (Compatible with p0f fingerprints). STDOUT is currently used for output, but we are working on other options.
+<br><br>
+People interested in joining the project are more than welcome :)
+</ul>
+ 
+<h2>Blog posts</h2>
+<ul>
+    <a href="http://www.gamelinux.org/?p=43">http://www.gamelinux.org/?p=43</a>
+    {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="/prads{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
+ 
+<h2>Download</h2>
+<p>
+    Prads is available as a
+    <a href="http://github.com/gamelinux/prads/tarball/master">tar-</a>
+    or <a href="http://github.com/gamelinux/prads/zipball/master">zip-</a>ball,
+    but you can also <a href="http://github.com/gamelinux/prads">clone it</a> with git.
+</p>
+ 
+<h2>Details</h2>
+<ul>
+    <li>Project admin: <a href="http://github.com/gamelinux">gamelinux</a></li>
+    <li>Intended Audience: Network Administrators, Security Analysts and Developers</li>
+    <li>Programming Language: <a href="http://perl.com">Perl</a></li>
+    <li>User Interface: Console</li>
+    <li>View project <a href="http://github.com/gamelinux/prads/graphs">activity</a></li>
+</ul>
+ 
